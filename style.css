@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Pixelify Sans', cursive;
+}
+
+.background {
+    background-image: linear-gradient(260deg, rgb(4, 57, 62), rgb(59, 27, 27), rgb(42, 35, 56));
+    height: 100%;
+    padding-top: 1px;
+}
+
+.title {
+    
+    text-align: center;
+    font-size: 44px;
+    margin-top: 8%;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes example {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    100% {
+        color: rgb(0, 255, 0);
+    }
+}
+
+.display {
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    text-align: center;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+.title:hover {
+    transition: transform 4s;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+
+}
+
+.tile {
+    border: 5px solid rgb(227, 221, 221);
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+
+.playerX {
+    color: #de4a00;
+}
+
+.playerO {
+    color: #d9ff00;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.controls button {
+    color: rgb(3, 3, 3); 
+    padding: 10px;
+    border-radius: 18px;
+    border: none;
+    font-size: 18px;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.restart {
+    background-color: #2d009d;
+}
+
+@keyframes example1 {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: blue;
+    }
+
+    100% {
+       background-color: rgb(0, 255, 0);
+    }
+}
+#reset {
+    animation-name: example1;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
